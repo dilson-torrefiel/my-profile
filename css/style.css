@@ -1,0 +1,69 @@
+body p {
+  font-size: 14px !important;
+  color: rgb(75, 73, 73) !important;
+  background-color: white !important;
+}
+body h2 {
+  color: #545454 !important;
+}
+
+/* Navigation */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+.navigation-bar {
+  background-color: #47b5ff;
+}
+.navbar-collapse {
+  padding: 0 20px;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: grey;
+  border-radius: 10px;
+}
+.nav-item {
+  color: whitesmoke;
+  font-weight: 600;
+}
+.nav-link {
+  color: #545454;
+}
+.nav-item .nav-link:hover {
+  color: whitesmoke;
+}
+/* Home */
+.home-head-text {
+  color: #545454 !important;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+.home-sub-head-text {
+  color: #5454549a !important;
+  font-size: 1rem;
+}
+.tech-stack-image {
+  border-style: none;
+  border-radius: 20px;
+}
+
+/* Projects */
+#carouselExampleDark {
+  margin: 20px 250px;
+}
+.carousel-item img {
+  border-radius: 10px;
+}
+.project-label {
+  margin-top: 100px;
+}
+
+@media (max-width: 780px) {
+  #carouselExampleDark {
+    margin: 20px 5px;
+  }
+  .project-label {
+    padding-top: 100px;
+  }
+}
