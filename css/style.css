@@ -6,6 +6,9 @@ body p {
 body h2 {
   color: #545454 !important;
 }
+body h3 {
+  color: #545454 !important;
+}
 
 /* Navigation */
 .feature-icon {
@@ -52,20 +55,76 @@ body h2 {
 #carouselExampleDark {
   margin: 20px 250px;
 }
-.carousel-item img {
+.project-image {
   border-radius: 10px;
 }
 .carousel-caption {
-  padding: 0 !important;
+  padding: 0px;
 }
+.project-desc {
+  margin: 0px;
+  margin-bottom: 5px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+.project-label {
+  margin: 0px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.btn-site {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.btn-image {
+  height: 20px;
+  margin-right: 5px;
+}
+.btn-link-text {
+  text-decoration: none;
+}
+.project-container,
+.education-container {
+  margin: 0px 20px;
+}
+
+/* About Me */
 
 @media (max-width: 780px) {
   #carouselExampleDark {
-    margin: 20px 5px;
+    margin: 20px 20px;
   }
+  .project-containe,
+  .education-containerr {
+    margin: 0px 20px;
+  }
+
+  /* About Me */
 }
 @media (min-width: 781px) and (max-width: 1200px) {
   #carouselExampleDark {
-    margin: 20px 50px;
+    margin: 20px 80px;
   }
+  .project-container,
+  .education-container {
+    margin: 0px 80px;
+  }
+
+  /* About Me */
+}
+@media (min-width: 1201px) {
+  #carouselExampleDark {
+    margin: 20px 250px;
+  }
+  .project-container,
+  .education-container {
+    margin: 20px 250px;
+  }
+
+  /* About Me */
 }
