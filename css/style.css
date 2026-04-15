@@ -55,15 +55,17 @@ body h2 {
 .carousel-item img {
   border-radius: 10px;
 }
-.project-label {
-  margin-top: 100px;
+.carousel-caption {
+  padding: 0 !important;
 }
 
 @media (max-width: 780px) {
   #carouselExampleDark {
     margin: 20px 5px;
   }
-  .project-label {
-    padding-top: 100px;
+}
+@media (min-width: 781px) and (max-width: 1200px) {
+  #carouselExampleDark {
+    margin: 20px 50px;
   }
 }
