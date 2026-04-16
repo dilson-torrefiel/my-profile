@@ -1,35 +1,22 @@
-/* body p {
-  font-size: 14px !important;
-  color: rgb(75, 73, 73) !important;
-  background-color: white !important;
-}
-body h2 {
-  color: #545454 !important;
-}
-body h3 {
-  color: #545454 !important;
-} */
-
 /* Navigation */
-.feature-icon {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 0.75rem;
+.profile-logo {
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 400;
 }
 .navigation-bar {
-  background-color: #47b5ff;
+  background: linear-gradient(90deg, #5de0e6, #004aad);
 }
 .navbar-collapse {
-  padding: 0 20px;
-  border-width: 1px;
-  border-style: dashed;
-  border-color: grey;
-  border-radius: 10px;
+  padding: 5px 20px;
+  background: linear-gradient(90deg, #5de0e6, #004aad);
+  border-radius: 20px;
 }
 .btn-CV {
   width: 120px;
   height: 40px;
-  margin: 10px 0px;
+  margin: 10px 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -53,12 +40,19 @@ body h3 {
   height: 20px;
   margin-right: 5px;
 }
+.drop-down-btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 .nav-item {
   color: whitesmoke;
   font-weight: 600;
 }
 .nav-link {
   color: #545454;
+  padding: 5px 10px;
 }
 .nav-item .nav-link:hover {
   color: whitesmoke;
@@ -84,6 +78,8 @@ body h3 {
 /* Projects */
 #project {
   margin-bottom: 50px;
+  padding: 20px 0px;
+  background: linear-gradient(90deg, #fdfbfb, #ebedee);
 }
 #carouselExampleDark {
   margin: 20px 250px;
@@ -127,10 +123,15 @@ body h3 {
 }
 
 /* About Me */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
 
 @media (max-width: 780px) {
   .dark-mode-btn {
-    margin: 10px 0px;
+    margin: 10px 10px;
   }
 
   #carouselExampleDark {
@@ -145,7 +146,7 @@ body h3 {
 }
 @media (min-width: 781px) and (max-width: 1200px) {
   .dark-mode-btn {
-    margin: 10px 0px;
+    margin: 10px 10px;
   }
 
   #carouselExampleDark {
