@@ -1,16 +1,21 @@
 /* Navigation */
 .profile-logo {
   font-style: normal;
-  color: whitesmoke;
+  color: darkslategrey;
+  text-align: center;
   font-size: 2rem;
   font-weight: 400;
 }
+.code-image {
+  padding-bottom: 3px;
+  margin: 0px 2px;
+}
 .navigation-bar {
-  background: linear-gradient(90deg, #5de0e6, #004aad);
+  background: linear-gradient(90deg, #00fff0, #0083fe);
 }
 .navbar-collapse {
   padding: 5px 20px;
-  background: linear-gradient(90deg, #5de0e6, #004aad);
+  background: linear-gradient(90deg, #00fff0, #0083fe);
   border-radius: 20px;
 }
 .btn-CV {
