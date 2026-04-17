@@ -25,11 +25,9 @@ body p,
 .container-fluid {
   padding: 0px;
   margin: 0px 14px;
-  border-radius: 5px;
-  background: linear-gradient(90deg, #00fff0, #0083fe);
 }
 .navigation-bar {
-  background: whitesmoke;
+  background: linear-gradient(90deg, #00fff0, #0083fe);
 }
 .navbar-toggler {
   margin-right: 20px;
@@ -40,8 +38,10 @@ body p,
 }
 .btn-CV {
   width: 120px;
-  height: 40px;
+  height: 35px;
   margin: 10px 10px;
+  padding: 0px;
+  padding: 2px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,9 +49,11 @@ body p,
   align-items: center;
 }
 .dark-mode-btn {
-  width: 140px;
-  height: 40px;
+  width: 120px;
+  height: 35px;
   margin: 10px 10px;
+  padding: 0px;
+  padding: 2px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -67,9 +69,9 @@ body p,
 }
 .drop-down-btn-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .nav-item {
   color: whitesmoke;
@@ -103,7 +105,9 @@ body p,
   border-radius: 10px;
 }
 .carousel-caption {
-  padding: 0px;
+  padding: 5px;
+  background: linear-gradient(90deg, #00fff0, #0083fe);
+  border-radius: 5px;
 }
 .project-desc {
   margin: 0px;
@@ -118,12 +122,14 @@ body p,
 }
 .btn-site {
   width: 120px;
-  height: 40px;
+  height: 35px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding: 0px;
+  padding: 2px !important;
 }
 .btn-image {
   height: 20px;
@@ -228,7 +234,10 @@ body p,
     margin: 0px 80px;
   }
 
-  /* About Me */
+  .drop-down-btn-container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 1201px) {
   #carouselExampleDark {
@@ -238,5 +247,8 @@ body p,
   .education-container {
     margin: 20px 250px;
   }
-  /* About Me */
+  .drop-down-btn-container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
