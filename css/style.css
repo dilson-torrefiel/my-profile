@@ -4,7 +4,7 @@ html {
 }
 body p,
 .experience_desc {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Navigation */
@@ -16,7 +16,6 @@ body p,
   font-weight: 400;
   margin: 0px;
   padding: 0px;
-  margin-left: 20px;
 }
 .code-image {
   padding-bottom: 3px;
@@ -28,9 +27,6 @@ body p,
 }
 .navigation-bar {
   background: linear-gradient(90deg, #00fff0, #0083fe);
-}
-.navbar-toggler {
-  margin-right: 20px;
 }
 .navbar-collapse {
   padding: 0px;
@@ -87,6 +83,14 @@ body p,
 /* Home */
 #home-page {
   margin-bottom: 50px;
+}
+.home-sub-head-text {
+  font-size: 18px;
+  color: #545454;
+  font-weight: 600;
+}
+.home-description-text {
+  font-size: 15px;
 }
 .tech-stack-image {
   border-style: none;
