@@ -2,10 +2,6 @@ html {
   scroll-padding-top: 400px; /* Global offset for all anchor links */
   scroll-behavior: smooth; /* Optional: adds a nice sliding effect */
 }
-body p,
-.experience_desc {
-  font-size: 15px;
-}
 
 /* Navigation */
 .profile-logo {
@@ -81,13 +77,6 @@ body p,
   color: whitesmoke;
 }
 /* Home */
-.home-sub-head-text {
-  font-size: 18px;
-  font-weight: 600;
-}
-.home-description-text {
-  font-size: 15px;
-}
 .tech-stack-image {
   border-style: none;
   border-radius: 20px;
@@ -96,6 +85,7 @@ body p,
 /* Projects */
 #project {
   padding: 20px 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 #carouselExampleDark {
   margin: 20px 250px;
@@ -107,6 +97,7 @@ body p,
   padding: 5px;
   background: linear-gradient(90deg, #00fff0, #0083fe);
   border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .project-desc {
   margin: 0px;
@@ -161,21 +152,27 @@ body p,
   margin: 0px;
   padding: 20px;
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #00f2fe, #4facfe78);
-  border-radius: 5px;
+  background: linear-gradient(90deg, #00f1fe87, #4facfe32);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
 }
 .experience {
+  padding: 10px;
+  border-radius: 10px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  border-radius: 5px;
-  background: linear-gradient(90deg, #16d9e3, #4facfe36);
+  background-image: linear-gradient(69.2deg, #e0eafc6a, #cfdef3b5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .experience p {
   margin: 0px;
+}
+.exp-row-container {
+  padding-top: 30px;
 }
 
 .desc {
@@ -198,7 +195,19 @@ body p,
 .company a {
   text-decoration: none;
 }
-
+.educ-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+}
+.education-image {
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 .social {
   width: 40px;
   height: 40px;
