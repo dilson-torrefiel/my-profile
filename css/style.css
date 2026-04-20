@@ -79,7 +79,15 @@ html {
 /* Home */
 .tech-stack-image {
   border-style: none;
-  border-radius: 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+/* Dark Mode Target */
+[data-bs-theme="dark"] .tech-stack-image {
+  border-style: inset;
+  border-color: white;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(110, 102, 102, 0.92);
 }
 
 /* Projects */
@@ -152,11 +160,15 @@ html {
   margin: 0px;
   padding: 20px;
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #00f1fe87, #4facfe32);
+  background: linear-gradient(90deg, #cdffd8, #94b9ff);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+}
+/* Dark Mode Target */
+[data-bs-theme="dark"] .exp-container {
+  background: linear-gradient(90deg, #000046, #1cb5e0);
 }
 .experience {
   padding: 10px;
@@ -168,6 +180,11 @@ html {
   background-image: linear-gradient(69.2deg, #e0eafc6a, #cfdef3b5);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+/* Dark Mode Target */
+[data-bs-theme="dark"] .experience {
+  background: linear-gradient(90deg, #000046, #1cb5e0);
+}
+
 .experience p {
   margin: 0px;
 }
