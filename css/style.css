@@ -157,6 +157,31 @@ body p,
   align-content: flex-start;
   align-items: center;
 }
+.exp-container {
+  margin: 0px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #00f2fe, #4facfe78);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #16d9e3, #4facfe36);
+}
+.experience p {
+  margin: 0px;
+}
+
+.desc {
+  padding: 20px;
+}
+
 .school-icon-coontainer {
   margin: 20px 0px;
 }
