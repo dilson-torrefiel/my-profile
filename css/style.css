@@ -80,14 +80,10 @@ html {
 .tech-stack-image {
   border-style: none;
   border-radius: 50%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 /* Dark Mode Target */
 [data-bs-theme="dark"] .tech-stack-image {
-  border-style: inset;
-  border-color: white;
-  border-radius: 50%;
-  box-shadow: 0 5px 10px rgba(110, 102, 102, 0.92);
+  border-style: none;
 }
 
 /* Projects */
@@ -160,7 +156,9 @@ html {
   margin: 0px;
   padding: 20px;
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #cdffd8, #94b9ff);
+  /* background: linear-gradient(90deg, #cdffd8, #94b9ff); */
+  /* background: linear-gradient(90deg, #0cc0df, #ffde59); */
+  background-color: whitesmoke;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
@@ -168,7 +166,8 @@ html {
 }
 /* Dark Mode Target */
 [data-bs-theme="dark"] .exp-container {
-  background: linear-gradient(90deg, #000046, #1cb5e0);
+  /* background: linear-gradient(90deg, #000046, #1cb5e0); */
+  background-color: rgba(245, 245, 245, 0.116);
 }
 .experience {
   padding: 10px;
@@ -177,12 +176,15 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(69.2deg, #e0eafc6a, #cfdef3b5);
+  /* background-image: linear-gradient(69.2deg, #e0eafc6a, #cfdef3b5); */
+  /* background: linear-gradient(90deg, #0cc0df, #ffde59); */
+  background-color: lightgray;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 /* Dark Mode Target */
 [data-bs-theme="dark"] .experience {
-  background: linear-gradient(90deg, #000046, #1cb5e0);
+  /* background: linear-gradient(90deg, #000046, #1cb5e0); */
+  background-color: rgba(173, 168, 168, 0.292);
 }
 
 .experience p {
