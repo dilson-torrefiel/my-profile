@@ -225,6 +225,8 @@ html {
 }
 [data-bs-theme="dark"] .education-image-dark {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .contact-details {
