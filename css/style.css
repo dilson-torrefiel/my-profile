@@ -139,6 +139,14 @@ html {
 .btn-link-text {
   text-decoration: none;
 }
+.project-icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.project-feature-icon {
+  margin-left: 10px;
+}
 
 /* About Me */
 .feature-icon {
@@ -273,7 +281,7 @@ html {
   #carouselExampleDark {
     margin: 20px 80px;
   }
-  .project-container,
+  .project-icon-container,
   .education-container {
     margin: 0px 80px;
   }
@@ -290,7 +298,7 @@ html {
   #carouselExampleDark {
     margin: 20px 250px;
   }
-  .project-container,
+  .project-icon-container,
   .education-container {
     margin: 20px 250px;
   }
