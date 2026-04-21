@@ -2,6 +2,11 @@ html {
   scroll-padding-top: 400px; /* Global offset for all anchor links */
   scroll-behavior: smooth; /* Optional: adds a nice sliding effect */
 }
+.margin-0,
+.padding-0 {
+  margin: 0px;
+  padding: 0px;
+}
 
 /* Navigation */
 .profile-logo {
@@ -80,7 +85,7 @@ html {
 /* Home */
 .tech-stack-image {
   border-style: none;
-  border-radius: 50%;
+  border-radius: 49%;
 }
 .dark {
   display: none;
@@ -105,7 +110,7 @@ html {
 }
 .project-container,
 .education-container {
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 .project-image {
   border-radius: 10px;
@@ -140,6 +145,7 @@ html {
   width: 3rem;
   height: 3rem;
   border-radius: 0.75rem;
+  margin-left: 10px;
 }
 .school-icon-container,
 .experience-icon-container,
@@ -153,10 +159,8 @@ html {
 
 .exp-container {
   margin: 0px;
-  padding: 20px;
   margin-bottom: 20px;
   background-color: white;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -183,30 +187,27 @@ html {
 .experience p {
   margin: 0px;
 }
-.exp-row-container {
-  padding-top: 30px;
-}
 
 .desc {
-  padding: 20px;
+  padding: 10px;
 }
 
 .education-image {
   width: 100%;
   height: fit-content;
   border-radius: 10px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
 }
 .education-image-dark {
   display: none;
   width: 100%;
   height: fit-content;
   border-radius: 10px;
-  margin-bottom: 50px;
-  margin-top: 30px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#education {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
 }
 /* Dark Mode Target */
 [data-bs-theme="dark"] .education-image {
@@ -214,6 +215,10 @@ html {
 }
 [data-bs-theme="dark"] .education-image-dark {
   display: block;
+}
+
+.contact-details {
+  padding-left: 10px;
 }
 
 .social {
@@ -253,9 +258,9 @@ html {
   }
 
   #carouselExampleDark {
-    margin: 20px 20px;
+    margin: 10px 10px;
   }
-  .project-containe,
+  .project-container,
   .education-containerr {
     margin: 0px 20px;
   }
@@ -273,6 +278,9 @@ html {
   .project-container,
   .education-container {
     margin: 0px 80px;
+  }
+  .about {
+    padding-left: 10px !important;
   }
 
   .drop-down-btn-container {
