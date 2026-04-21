@@ -204,7 +204,7 @@ html {
 
 .education-image {
   width: 100%;
-  height: fit-content;
+  height: auto;
   border-radius: 10px;
 }
 .education-image-dark {
