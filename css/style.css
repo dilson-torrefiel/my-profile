@@ -18,6 +18,13 @@ html {
   margin: 0px;
   padding: 0px;
 }
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
 .code-image {
   padding-bottom: 3px;
   margin: 0px 2px;
@@ -112,6 +119,12 @@ html {
 .education-container {
   margin: 0px 10px;
 }
+.education-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .project-image {
   border-radius: 10px;
 }
@@ -153,6 +166,9 @@ html {
   width: 3rem;
   height: 3rem;
   border-radius: 0.75rem;
+}
+.about {
+  margin: 20px 0px;
 }
 .feature-icon-education {
   margin-left: 10px;
@@ -217,7 +233,6 @@ html {
 #education {
   margin: 0px;
   padding: 0px;
-  margin-top: 20px;
 }
 /* Dark Mode Target */
 [data-bs-theme="dark"] .education-image {
@@ -272,6 +287,10 @@ html {
   #carouselExampleDark {
     margin: 10px 10px;
   }
+  .education {
+    width: 80%;
+    height: 60%;
+  }
 
   /* About Me */
 }
@@ -287,25 +306,33 @@ html {
   .education-container {
     margin: 0px 80px;
   }
-  .about {
-    padding-left: 10px !important;
-  }
 
   .drop-down-btn-container {
     flex-direction: row;
     justify-content: flex-end;
   }
+  .education {
+    width: 70%;
+    height: 60%;
+  }
 }
 @media (min-width: 1201px) {
+  .profile {
+    margin: 0px 350px;
+  }
   #carouselExampleDark {
-    margin: 20px 250px;
+    margin: 20px 350px;
   }
   .project-icon-container,
   .education-container {
-    margin: 20px 250px;
+    margin: 20px 350px;
   }
   .drop-down-btn-container {
     flex-direction: row;
     justify-content: flex-end;
+  }
+  .education {
+    width: 60%;
+    height: 50%;
   }
 }

@@ -7,8 +7,9 @@
 let lastScrollTop = 0;
 
 // Initialize the Bootstrap Collapse instance
-const navMenu = document.getElementById("navbarSupportedContent");
-const bsCollapse = new bootstrap.Collapse(navMenu, { toggle: false });
+const bsCollapse = new bootstrap.Collapse($("#navbarSupportedContent").get(0), {
+  toggle: false,
+});
 
 // Window scroll event
 window.addEventListener(
@@ -20,7 +21,7 @@ window.addEventListener(
     // Detect Scroll Up
     if (currentScroll < lastScrollTop) {
       // Check if the menu is currently visible (Bootstrap adds the 'show' class)
-      if (navMenu.classList.contains("show")) {
+      if ($("#navbarSupportedContent").hasClass("show")) {
         bsCollapse.hide();
       }
     }
