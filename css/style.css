@@ -288,8 +288,8 @@ html {
     margin: 10px 10px;
   }
   .education {
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    height: auto;
   }
 
   /* About Me */
@@ -313,7 +313,7 @@ html {
   }
   .education {
     width: 70%;
-    height: 60%;
+    height: auto;
   }
 }
 @media (min-width: 1201px) {
@@ -333,6 +333,6 @@ html {
   }
   .education {
     width: 60%;
-    height: 50%;
+    height: auto;
   }
 }
