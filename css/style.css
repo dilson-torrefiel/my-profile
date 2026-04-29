@@ -115,10 +115,6 @@ html {
 #carouselExampleDark {
   margin: 20px 250px;
 }
-.project-container,
-.education-container {
-  margin: 0px 10px;
-}
 .education-container {
   display: flex;
   flex-direction: column;
