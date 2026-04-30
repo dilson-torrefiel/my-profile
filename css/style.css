@@ -219,6 +219,10 @@ html {
   padding: 10px;
 }
 
+.exp-desc {
+  text-align: justify;
+}
+
 .education-image {
   width: 100%;
   height: auto;
@@ -328,11 +332,11 @@ html {
     margin: 0px 350px;
   }
   #carouselExampleDark {
-    margin: 20px 350px;
+    margin: 20px 300px;
   }
   .project-icon-container,
   .education-container {
-    margin: 20px 350px;
+    margin: 20px 300px;
   }
   .drop-down-btn-container {
     flex-direction: row;
