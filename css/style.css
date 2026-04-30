@@ -106,11 +106,13 @@ html {
   justify-content: center;
   text-align: center;
 }
+.profile-desc {
+  text-align: justify;
+}
 
 /* Projects */
 #project {
-  padding: 20px 0px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px 0px;
 }
 #carouselExampleDark {
   margin: 20px 250px;
@@ -123,6 +125,9 @@ html {
 }
 .project-image {
   border-radius: 10px;
+}
+.carousel-inner {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .carousel-caption {
   display: flex;
@@ -275,6 +280,10 @@ html {
 }
 
 @media (max-width: 780px) {
+  .profile {
+    margin: 0px 50px;
+  }
+
   .dark-mode-btn {
     margin: 10px 10px;
   }
@@ -290,6 +299,9 @@ html {
   /* About Me */
 }
 @media (min-width: 781px) and (max-width: 1200px) {
+  .profile {
+    margin: 0px 200px;
+  }
   .dark-mode-btn {
     margin: 10px 10px;
   }
