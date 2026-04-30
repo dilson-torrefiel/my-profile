@@ -220,7 +220,7 @@ html {
 }
 
 .exp-desc {
-  text-align: justify;
+  text-align: start;
 }
 
 .education-image {
@@ -285,7 +285,7 @@ html {
 
 @media (max-width: 780px) {
   .profile {
-    margin: 0px 50px;
+    margin: 0px 10px;
   }
 
   .dark-mode-btn {
@@ -300,11 +300,17 @@ html {
     height: auto;
   }
 
+  .experience {
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+  }
+
   /* About Me */
 }
 @media (min-width: 781px) and (max-width: 1200px) {
   .profile {
-    margin: 0px 200px;
+    margin: 0px 100px;
   }
   .dark-mode-btn {
     margin: 10px 10px;
@@ -325,6 +331,12 @@ html {
   .education {
     width: 70%;
     height: auto;
+  }
+
+  .experience {
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
   }
 }
 @media (min-width: 1201px) {
