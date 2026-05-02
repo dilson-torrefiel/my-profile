@@ -88,6 +88,13 @@ html {
 .nav-item .nav-link:hover {
   color: whitesmoke;
 }
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
 
 /* Home */
 .tech-stack-image {
@@ -357,5 +364,8 @@ html {
   .education {
     width: 85%;
     height: auto;
+  }
+  .navbar-nav {
+    padding-right: 100px;
   }
 }
