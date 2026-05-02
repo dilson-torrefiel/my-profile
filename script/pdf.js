@@ -4,6 +4,6 @@
  * Make sure to replace "./files/my-cv.pdf" with the actual path to your PDF file.
  */
 function openPDF() {
-  const pdfUrl = "./files/my-cv.pdf";
+  const pdfUrl = "./files/dilson-torrefiel-cv.pdf";
   window.open(pdfUrl, "_blank");
 }
