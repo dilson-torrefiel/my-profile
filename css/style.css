@@ -1,6 +1,6 @@
 html {
-  scroll-padding-top: 400px; /* Global offset for all anchor links */
-  scroll-behavior: smooth; /* Optional: adds a nice sliding effect */
+  scroll-padding-top: 400px;
+  scroll-behavior: smooth;
 }
 .margin-0,
 .padding-0 {
@@ -92,8 +92,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 /* Home */
@@ -313,6 +312,11 @@ html {
     align-items: flex-start;
   }
 
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* About Me */
 }
 @media (min-width: 781px) and (max-width: 1200px) {
@@ -321,6 +325,11 @@ html {
   }
   .dark-mode-btn {
     margin: 10px 10px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
   }
 
   #carouselExampleDark {
@@ -333,7 +342,6 @@ html {
 
   .drop-down-btn-container {
     flex-direction: row;
-    justify-content: flex-end;
   }
   .education {
     width: 70%;
