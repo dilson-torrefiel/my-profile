@@ -1,0 +1,1 @@
+let lastScrollTop=0;const bsCollapse=new bootstrap.Collapse($("#navbarSupportedContent").get(0),{toggle:!1});window.addEventListener("scroll",function(){let o=window.pageYOffset||document.documentElement.scrollTop;o<lastScrollTop&&$("#navbarSupportedContent").hasClass("show")&&bsCollapse.hide(),lastScrollTop=o<=0?0:o},{passive:!0});

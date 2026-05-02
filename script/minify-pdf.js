@@ -1,0 +1,1 @@
+function openPDF(){window.open("./files/dilson-torrefiel-cv.pdf","_blank")}

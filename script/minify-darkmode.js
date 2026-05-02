@@ -1,0 +1,1 @@
+let count=0;function enableDarkMode(){count++,count%2!=0?($("html").get(0).setAttribute("data-bs-theme","dark"),$("#btn").get(0).setAttribute("class","btn btn-dark dark-mode-btn")):($("html").get(0).removeAttribute("data-bs-theme"),$("#btn").get(0).setAttribute("class","btn btn-light dark-mode-btn"))}
