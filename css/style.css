@@ -167,6 +167,22 @@ html {
 .project-feature-icon {
   margin-left: 10px;
 }
+.project-container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.project {
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
 
 /* About Me */
 .feature-icon {
@@ -336,6 +352,7 @@ html {
     margin: 20px 80px;
   }
   .project-icon-container,
+  .project-container,
   .education-container {
     margin: 0px 80px;
   }
@@ -362,6 +379,7 @@ html {
     margin: 20px 350px;
   }
   .project-icon-container,
+  .project-container,
   .education-container {
     margin: 20px 350px;
   }
