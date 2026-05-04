@@ -173,7 +173,7 @@ html {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: center;
 }
 .project {
   padding: 10px;
