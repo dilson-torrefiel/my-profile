@@ -168,7 +168,7 @@ html {
   margin-left: 10px;
 }
 .project-container {
-  padding-top: 30px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -314,12 +314,20 @@ html {
     margin: 10px 10px;
   }
 
-  #carouselExampleDark {
-    margin: 10px 10px;
-  }
   .education {
     width: 100%;
     height: auto;
+  }
+
+  .school-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .school {
+    margin: 10px 0px;
   }
 
   .experience {
@@ -348,9 +356,6 @@ html {
     flex-direction: column;
   }
 
-  #carouselExampleDark {
-    margin: 20px 80px;
-  }
   .project-icon-container,
   .project-container,
   .education-container {
@@ -375,9 +380,7 @@ html {
   .profile {
     margin: 0px 350px;
   }
-  #carouselExampleDark {
-    margin: 20px 350px;
-  }
+
   .project-icon-container,
   .project-container,
   .education-container {
