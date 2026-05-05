@@ -1,0 +1,1 @@
+window.onload=function(){$("#loader").remove(),$("#home").css("display","block")};
