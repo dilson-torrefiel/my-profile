@@ -371,7 +371,11 @@ html {
     align-items: flex-start;
   }
 
-  /* About Me */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 781px) and (max-width: 1200px) {
   .profile {
@@ -400,6 +404,11 @@ html {
     text-align: left;
     align-items: flex-start;
   }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 1201px) {
   .profile {
@@ -421,5 +430,8 @@ html {
   }
   .navbar-nav {
     padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
