@@ -3,14 +3,10 @@
  * 2026 by Dilson Torrefiel
  */
 
-// Initialize Toggle Counter
 let count = 0;
 
 function enableDarkMode() {
-  // Increment
   count++;
-
-  // Modulo logic
   if (count % 2 !== 0) {
     // Add a new data property: data-theme="dark"
     $("html").get(0).setAttribute("data-bs-theme", "dark");
