@@ -202,8 +202,7 @@ html {
   align-items: center;
 }
 .project {
-  padding: 10px;
-  gap: 8px;
+  gap: 5px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -448,7 +447,6 @@ html {
   }
   .profile-left {
     margin-left: 20px;
-    /* margin-right: 100px; */
     text-align: left;
   }
   .profile-right {
