@@ -151,12 +151,15 @@ html {
   text-align: center;
 }
 
+#home-page {
+  margin-top: 0px;
+  padding-top: 0px;
+  box-shadow: 0 10px 20px rgba(118, 112, 112, 0.334);
+}
+
 /* Projects */
 #project {
   margin: 20px 0px;
-}
-#carouselExampleDark {
-  margin: 20px 250px;
 }
 .education-container {
   display: flex;
@@ -166,19 +169,6 @@ html {
 }
 .project-image {
   border-radius: 10px;
-}
-.carousel-inner {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-.carousel-caption {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  background-color: whitesmoke;
-  border-radius: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .project-desc {
   margin: 0px;
@@ -209,6 +199,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
+  align-items: center;
 }
 .project {
   padding: 10px;
@@ -343,6 +334,11 @@ html {
 @media (max-width: 780px) {
   .profile {
     margin: 0px 10px;
+    padding-top: 50px;
+  }
+  .profile h1 {
+    font-size: display-6;
+    text-align: center;
   }
 
   .dark-mode-btn {
@@ -380,7 +376,13 @@ html {
 @media (min-width: 781px) and (max-width: 1200px) {
   .profile {
     margin: 0px 100px;
+    padding-top: 50px;
   }
+  .profile h1 {
+    font-size: display-6;
+    text-align: center;
+  }
+
   .dark-mode-btn {
     margin: 10px 10px;
   }
@@ -410,9 +412,54 @@ html {
     justify-content: flex-end;
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1449px) {
   .profile {
-    margin: 0px 350px;
+    margin: 0px 250px;
+  }
+  .profile h1 {
+    font-size: display-6;
+    text-align: center;
+  }
+  .project-icon-container,
+  .project-container,
+  .education-container {
+    margin: 20px 350px;
+  }
+  .drop-down-btn-container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .education {
+    width: 75%;
+    height: auto;
+  }
+  .navbar-nav {
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1450px) {
+  .profile {
+    flex-direction: row-reverse;
+    margin: 0px 120px;
+  }
+  .profile-left {
+    margin-left: 20px;
+    /* margin-right: 100px; */
+    text-align: left;
+  }
+  .profile-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 650px;
+  }
+  .profile-desc {
+    text-align: left;
   }
 
   .project-icon-container,
