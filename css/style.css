@@ -154,7 +154,6 @@ html {
 #home-page {
   margin-top: 0px;
   padding-top: 0px;
-  box-shadow: 0 10px 20px rgba(118, 112, 112, 0.334);
 }
 
 /* Projects */
@@ -478,5 +477,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+  #home-page {
+    box-shadow: 0 10px 20px rgba(118, 112, 112, 0.334);
   }
 }
