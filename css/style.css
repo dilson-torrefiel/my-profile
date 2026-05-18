@@ -341,7 +341,12 @@ html {
     font-size: display-6;
     text-align: center;
   }
-
+  .profile-desc {
+    text-align: center;
+  }
+  .profile-left {
+    text-align: center;
+  }
   .project-container {
     padding-top: 20px;
   }
@@ -384,6 +389,12 @@ html {
   }
   .profile h1 {
     font-size: display-6;
+    text-align: center;
+  }
+  .profile-desc {
+    text-align: center;
+  }
+  .profile-left {
     text-align: center;
   }
   .project-container {
@@ -430,6 +441,12 @@ html {
   }
   .profile h1 {
     font-size: display-6;
+    text-align: center;
+  }
+  .profile-desc {
+    text-align: center;
+  }
+  .profile-left {
     text-align: center;
   }
   .project-icon-container,
