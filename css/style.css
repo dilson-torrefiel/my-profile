@@ -192,6 +192,7 @@ html {
   margin-left: 10px;
 }
 .project-container {
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -200,7 +201,7 @@ html {
   align-items: center;
 }
 .project {
-  gap: 3px;
+  gap: 5px;
   padding: 5px 5px;
   display: flex;
   flex-direction: row;
