@@ -158,7 +158,7 @@ html {
 
 /* Projects */
 #project {
-  margin: 20px 0px;
+  padding: 20px 0px;
 }
 .education-container {
   display: flex;
@@ -192,7 +192,6 @@ html {
   margin-left: 10px;
 }
 .project-container {
-  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -201,18 +200,20 @@ html {
   align-items: center;
 }
 .project {
-  gap: 5px;
+  gap: 3px;
+  padding: 5px 5px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: center;
+  border-radius: 10px;
 }
 
 /* About Me */
 .feature-icon {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
 }
 .about {
   margin: 20px 0px;
@@ -349,7 +350,6 @@ html {
   }
 
   .school-container {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -389,6 +389,11 @@ html {
   .project-container,
   .education-container {
     margin: 0px 80px;
+  }
+
+  .project-container .btn {
+    padding: 0;
+    padding: 2px, 3px;
   }
 
   .drop-down-btn-container {
@@ -445,6 +450,7 @@ html {
     margin: 0px 120px;
   }
   .profile-left {
+    width: 80%;
     margin-left: 20px;
     text-align: left;
   }
