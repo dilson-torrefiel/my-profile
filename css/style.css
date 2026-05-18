@@ -147,7 +147,7 @@ html {
   justify-content: center;
   text-align: center;
 }
-.profile-desc {
+.project-container .profile-desc {
   text-align: center;
 }
 
@@ -158,7 +158,8 @@ html {
 
 /* Projects */
 #project {
-  padding: 20px 0px;
+  padding: 20px 5px;
+  margin: 5px 2px;
 }
 .education-container {
   display: flex;
@@ -192,10 +193,9 @@ html {
   margin-left: 10px;
 }
 .project-container {
-  padding-top: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
@@ -208,6 +208,7 @@ html {
   justify-content: flex-start;
   align-content: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* About Me */
@@ -341,6 +342,10 @@ html {
     text-align: center;
   }
 
+  .project-container {
+    padding-top: 20px;
+  }
+
   .dark-mode-btn {
     margin: 10px 10px;
   }
@@ -380,6 +385,9 @@ html {
   .profile h1 {
     font-size: display-6;
     text-align: center;
+  }
+  .project-container {
+    padding-top: 20px;
   }
 
   .dark-mode-btn {
