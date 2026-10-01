@@ -1,209 +1,139 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dilson Torrefiel</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <link href="./css/style.css" rel="stylesheet" />
-  </head>
-  <body id="home">
-    <!-- Loader -->
-    <div id="loader" class="d-flex justify-content-center">
-      <div id="spinner" class="spinner-border" role="status"></div>
-    </div>
-    <!-- Navigation -->
-    <section id="navigation" class="navigation sticky-top">
-      <div class="navbar-container">
-        <nav class="navbar navbar-expand-lg navigation-bar">
-          <div class="container-fluid">
-            <a class="navbar-brand profile-logo" href="#">
-              🕷️s<img
-                src="./images/code.png"
-                class="code-image"
-                height="30"
-                alt="code image"
-              />n
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mb-2 mb-lg-0 w-100">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#project">Project</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about-me">About</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="#education
-                  "
-                    >Education</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-              <div class="drop-down-btn-container">
-                <button class="btn btn-light btn-CV" onclick="openPDF()">
-                  View CV
-                </button>
-                <div class="dark-mode">
-                  <a
-                    id="btn"
-                    class="btn btn-light dark-mode-btn"
-                    role="button"
-                    data-bs-toggle="button"
-                    onclick="enableDarkMode()"
-                    aria-pressed="true"
-                    >Dark Mode</a
-                  >
-                </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilson Torrefiel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body id="home">
+  <!-- Loader -->
+  <div id="loader" class="d-flex justify-content-center">
+    <div id="spinner" class="spinner-border" role="status"></div>
+  </div>
+  <!-- Navigation -->
+  <section id="navigation" class="navigation sticky-top">
+    <div class="navbar-container">
+      <nav class="navbar navbar-expand-lg navigation-bar">
+        <div class="container-fluid">
+          <a class="navbar-brand profile-logo" href="#">
+            🕷️s<img src="./images/code.png" class="code-image" height="30" alt="code image" />n
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education
+                  ">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="drop-down-btn-container">
+              <button class="btn btn-light btn-CV" onclick="openPDF()">
+                View CV
+              </button>
+              <div class="dark-mode">
+                <a id="btn" class="btn btn-light dark-mode-btn" role="button" data-bs-toggle="button"
+                  onclick="enableDarkMode()" aria-pressed="true">Dark Mode</a>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </section>
+        </div>
+      </nav>
+    </div>
+  </section>
 
-    <!-- Home -->
-    <section id="home-page">
-      <div class="profile">
-        <div class="profile-left">
-          <h1 class="display-3 text-body-emphasis">Hi! I'm Dilson.👋</h1>
-          <div class="mx-auto py-2">
-            <p class="profile-desc mb-4 text-body-secondary">
-              I’m a
-              <span class="bg-info-subtle text-info-emphasis rounded-pill px-2"
-                >Software Developer</span
-              >
-              specializing in Windows desktop and web applications. Passionate
-              about
-              <span
-                class="bg-dark-subtle text-success-emphasis rounded-pill px-2"
-                >clean code</span
-              >
-              ,
-              <span
-                class="bg-warning-subtle text-info-emphasis rounded-pill px-2"
-                >Agentic AI</span
-              >
-              ,
-              <span
-                class="bg-primary-subtle text-info-emphasis rounded-pill px-2"
-                >Large Language Model (LLM)</span
-              >
-              ,
-              <span
-                class="bg-secondary-subtle text-info-emphasis rounded-pill px-2"
-                >locallized AI agent for coding</span
-              >
-              ,
-              <span
-                class="bg-warning-subtle text-warning-emphasis rounded-pill px-2"
-                >mentorship</span
-              >, and
-              <span
-                class="bg-success-subtle text-success-emphasis rounded-pill px-2"
-                >collaborative engineering</span
-              >. Let's build something great together.
-            </p>
-          </div>
-        </div>
-        <div class="profile-right">
-          <div class="light mb-2 mt-2">
-            <img
-              src="./images/my-profile.png"
-              class="img-fluid tech-stack-image"
-              alt="Example image"
-              loading="lazy"
-            />
-          </div>
-          <div class="dark mb-2 mt-2">
-            <img
-              src="./images/my-profile-dark.png"
-              class="img-fluid tech-stack-image"
-              alt="Example image"
-              loading="lazy"
-            />
-          </div>
+  <!-- Home -->
+  <section id="home-page">
+    <div class="profile">
+      <div class="profile-left">
+        <h1 class="display-3 text-body-emphasis">Hi! I'm Dilson.👋</h1>
+        <div class="mx-auto py-2">
+          <p class="profile-desc mb-4 text-body-secondary">
+            I’m a
+            <span class="bg-info-subtle text-info-emphasis rounded-pill px-2">Software Developer</span>
+            specializing in Windows desktop and web applications. Passionate
+            about
+            <span class="bg-dark-subtle text-success-emphasis rounded-pill px-2">clean code</span>
+            ,
+            <span class="bg-warning-subtle text-info-emphasis rounded-pill px-2">Agentic AI</span>
+            ,
+            <span class="bg-primary-subtle text-info-emphasis rounded-pill px-2">Large Language Model (LLM)</span>
+            ,
+            <span class="bg-secondary-subtle text-info-emphasis rounded-pill px-2">locallized AI agent for coding</span>
+            ,
+            <span class="bg-warning-subtle text-warning-emphasis rounded-pill px-2">mentorship</span>, and
+            <span class="bg-success-subtle text-success-emphasis rounded-pill px-2">collaborative engineering</span>.
+            Let's build something great together.
+          </p>
         </div>
       </div>
-    </section>
+      <div class="profile-right">
+        <div class="light mb-2 mt-2">
+          <img src="./images/my-profile.png" class="img-fluid tech-stack-image" alt="Example image" loading="lazy" />
+        </div>
+        <div class="dark mb-2 mt-2">
+          <img src="./images/my-profile-dark.png" class="img-fluid tech-stack-image" alt="Example image"
+            loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="project">
-      <div class="project-icon-container">
-        <div
-          class="feature-icon project-feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            class="bi bi-person-workspace text-white"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
-            />
-            <path
-              d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"
-            />
-          </svg>
-        </div>
-        <h3 class="display-6 fs-2 text-body-emphasis mx-3 padding-0">
-          Project
-        </h3>
+  <!-- Projects -->
+  <section id="project">
+    <div class="project-icon-container">
+      <div
+        class="feature-icon project-feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor"
+          class="bi bi-person-workspace text-white" viewBox="0 0 16 16">
+          <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+          <path
+            d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z" />
+        </svg>
       </div>
-      <div class="project-container">
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+      <h3 class="display-6 fs-2 text-body-emphasis mx-3 padding-0">
+        Project
+      </h3>
+    </div>
+    <div class="project-container">
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open(
               'https://dilson-torrefiel.github.io/my-profile/',
               '_blank',
             )
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Porfolio
-        </div>
-        <div
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Porfolio
+      </div>
+      <!-- <div
           class="project fs-5 text-body-secondary"
           onclick="window.open('https://charley.tech/', '_blank')"
         >
@@ -220,719 +150,479 @@
             ></path>
           </svg>
           Charley
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="window.open('https://zion-cafe.base44.app/', '_blank')"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Zi's Cafe (E-commerce)
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+        </div> -->
+      <div class="project fs-5 text-body-secondary" onclick="window.open('https://zion-cafe.base44.app/', '_blank')">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Zi's Cafe (E-commerce)
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open('https://resume-creator-pro.base44.app/', '_blank')
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Resume Creator Pro
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Resume Creator Pro
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open(
               'https://github.com/trainingeduasi/OmnixSparta.git',
               '_blank',
             )
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Project Management
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Project Management
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open('https://www.cebupacificair.com/en-PH/', '_blank')
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Cebu Pacific Air
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Cebu Pacific Air
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open('https://github.com/trainingeduasi/IRC.git', '_blank')
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Inventory
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Inventory
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open(
               'https://github.com/trainingeduasi/winforms_mySQL_app.git',
               '_blank',
             )
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          School Records
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        School Records
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open(
               'https://dilson-torrefiel.github.io/css-flexbox/',
               '_blank',
             )
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Flexbox Playground
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Flexbox Playground
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open(
               'https://dilson-torrefiel.github.io/dice-game/',
               '_blank',
             )
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Dice Game
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Dice Game
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open('https://dilson-torrefiel.github.io/drums/', '_blank')
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Drums Set
-        </div>
-        <div
-          class="project fs-5 text-body-secondary"
-          onclick="
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Drums Set
+      </div>
+      <div class="project fs-5 text-body-secondary" onclick="
             window.open(
               'https://dilson-torrefiel.github.io/simon-game/',
               '_blank',
             )
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20"
-            fill="currentColor"
-            color="lightgreen"
-            class="bi bi-plus-circle-fill mt-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-            ></path>
-          </svg>
-          Simon Game
-        </div>
+          ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" color="lightgreen"
+          class="bi bi-plus-circle-fill mt-1" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+          </path>
+        </svg>
+        Simon Game
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section id="about-me">
-      <div class="education-container">
-        <div class="about row g-4 row-cols-1 row-cols-lg-1">
+  <!-- About -->
+  <section id="about-me">
+    <div class="education-container">
+      <div class="about row g-4 row-cols-1 row-cols-lg-1">
+        <!-- Education -->
+        <div id="education" class="feature col">
+          <div class="school-icon-container">
+            <div
+              class="feature-icon feature-icon-education d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-2">
+              <img src="./images/briefcase.svg" alt="briefcase icon" height="20" />
+            </div>
+            <h3 class="display-6 fs-2 text-body-emphasis mx-3">Education</h3>
+          </div>
           <!-- Education -->
-          <div id="education" class="feature col">
-            <div class="school-icon-container">
-              <div
-                class="feature-icon feature-icon-education d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-2"
-              >
-                <img
-                  src="./images/briefcase.svg"
-                  alt="briefcase icon"
-                  height="20"
-                />
+          <div class="school-container">
+            <div class="school mt-3 px-4">
+              <div class="lead">
+                <p class="lead text-body-secondary margin-0 padding-0">
+                  2019 - 2020
+                </p>
+                <p class="margin-0 padding-0">
+                  University of Cebu - Main Campus
+                </p>
               </div>
-              <h3 class="display-6 fs-2 text-body-emphasis mx-3">Education</h3>
+              <span
+                class="d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey"
+                  class="bi bi-check-circle-fill mx-1" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+                Bachelor of Science in Computer Engineering
+              </span>
             </div>
-            <!-- Education -->
-            <div class="school-container">
-              <div class="school mt-3 px-4">
-                <div class="lead">
-                  <p class="lead text-body-secondary margin-0 padding-0">
-                    2019 - 2020
-                  </p>
-                  <p class="margin-0 padding-0">
-                    University of Cebu - Main Campus
-                  </p>
-                </div>
-                <span
-                  class="d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="grey"
-                    class="bi bi-check-circle-fill mx-1"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                    />
-                  </svg>
-                  Bachelor of Science in Computer Engineering
-                </span>
+            <div class="school mt-3 px-4">
+              <div class="lead">
+                <p class="lead text-body-secondary margin-0 padding-0">
+                  2008 - 2009
+                </p>
+                <p class="margin-0 padding-0">Cebu Normal University</p>
               </div>
-              <div class="school mt-3 px-4">
-                <div class="lead">
-                  <p class="lead text-body-secondary margin-0 padding-0">
-                    2008 - 2009
-                  </p>
-                  <p class="margin-0 padding-0">Cebu Normal University</p>
-                </div>
-                <span
-                  class="d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="grey"
-                    class="bi bi-check-circle-fill mx-1"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                    />
-                  </svg>
-                  Diploma in Profesional Education
-                </span>
+              <span
+                class="d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey"
+                  class="bi bi-check-circle-fill mx-1" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+                Diploma in Profesional Education
+              </span>
+            </div>
+            <div class="school mt-3 px-4">
+              <div class="lead">
+                <p class="lead text-body-secondary margin-0 padding-0">
+                  2004 - 2007
+                </p>
+                <p class="margin-0 padding-0">CITE Technical Institute</p>
               </div>
-              <div class="school mt-3 px-4">
-                <div class="lead">
-                  <p class="lead text-body-secondary margin-0 padding-0">
-                    2004 - 2007
-                  </p>
-                  <p class="margin-0 padding-0">CITE Technical Institute</p>
-                </div>
-                <span
-                  class="d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="grey"
-                    class="bi bi-check-circle-fill mx-1"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                    />
-                  </svg>
-                  Diploma in Electromechanical Engineering Technology
-                </span>
-              </div>
+              <span
+                class="d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey"
+                  class="bi bi-check-circle-fill mx-1" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+                Diploma in Electromechanical Engineering Technology
+              </span>
             </div>
           </div>
-          <!-- Experience -->
-          <div id="experience" class="feature col">
-            <div class="experience-icon-container mb-3 mt-4">
-              <div
-                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-3"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-person-workspace text-white"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
-                  />
-                  <path
-                    d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"
-                  />
-                </svg>
-              </div>
-              <h3 class="display-6 fs-2 text-body-emphasis mx-3">
-                Work Experience
-              </h3>
+        </div>
+        <!-- Experience -->
+        <div id="experience" class="feature col">
+          <div class="experience-icon-container mb-3 mt-4">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor"
+                class="bi bi-person-workspace text-white" viewBox="0 0 16 16">
+                <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                <path
+                  d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z" />
+              </svg>
             </div>
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne"
-                  >
-                    <div class="fs-6 mb-0 d-flex align-items-center gap-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="25"
-                        color="grey"
-                        fill="currentColor"
-                        class="bi bi-plus-circle-dotted lead"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-                        ></path>
-                      </svg>
-                      2026 - Present : Technical Support Engineer | Developer
-                      Abu Dhabi UAE.
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseOne"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <span class="display-6">Developed </span>
-                        a comprehensive SaaS (Software as a Service) platform
-                        designed for professionals working in the syngas and
-                        chemical process industries.
-                      </li>
-                      <li>
-                        <span class="display-6">Collaborated</span>
-                        with cross-functional teams to drive the development and
-                        deployment of innovative solutions.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo"
-                  >
-                    <div class="fs-6 mb-0 d-flex align-items-center gap-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="25"
-                        color="grey"
-                        fill="currentColor"
-                        class="bi bi-plus-circle-dotted lead"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-                        ></path>
-                      </svg>
-                      2021 - 2026 : Supervisor I | Software Development at
-                      Alliance Software Inc.
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseTwo"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <span class="display-6">Developed </span>
-                        enterprise Windows desktop and web applications
-                        following Agile and Waterfall methodologies.
-                      </li>
-                      <li>
-                        <span class="display-6">Promoted </span>
-                        to Supervisor to lead a team through the full Software
-                        Development Life Cycle (SDLC), managing source control
-                        and code integration via Azure DevOps and Git.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree"
-                  >
-                    <div class="fs-6 mb-0 d-flex align-items-center gap-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="25"
-                        color="grey"
-                        fill="currentColor"
-                        class="bi bi-plus-circle-dotted lead"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-                        ></path>
-                      </svg>
-                      2017 - 2020 : Team Lead | Automation & Control Systems at
-                      Tec Square Solutions Inc.
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseThree"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <span class="display-6"> Led </span>
-                        a cross-functional team integrating emerging
-                        technologies to modernize plant operations.
-                      </li>
-                      <li>
-                        <span class="display-6"> Architected </span>
-                        SCADA system infrastructure for real-time factory data
-                        monitoring and developed standardized PLC and
-                        human-machine interface (HMI) control faceplates.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseFour"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseFour"
-                  >
-                    <div class="fs-6 mb-0 d-flex align-items-center gap-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="25"
-                        color="grey"
-                        fill="currentColor"
-                        class="bi bi-plus-circle-dotted lead"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-                        ></path>
-                      </svg>
-                      2011 - 2017 : Draftsman | Automation & Control Systems at
-                      Tec Square Solutions Inc.
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseFour"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <span class="display-6"> Designed </span>
-                        comprehensive 2D and 3D CAD layouts for industrial
-                        automation projects.
-                      </li>
-                      <li>
-                        <span class="display-6"> Optimized </span>
-                        instrumentation placement for tanks, pressure vessels,
-                        pumps, valves, and sensors, significantly streamlining
-                        field installation and piping routes.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseFive"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseFive"
-                  >
-                    <div class="fs-6 mb-0 d-flex align-items-center gap-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="25"
-                        color="grey"
-                        fill="currentColor"
-                        class="bi bi-plus-circle-dotted lead"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
-                        ></path>
-                      </svg>
-                      2007 - 2011 : Teaching Staff at CITE Technical Institute
-                      Inc.
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseFive"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        <span class="display-6"> Delivered </span>
-                        comprehensive training modules in basic computer
-                        literacy and advanced AutoCAD 2D & 3D engineering
-                        design.
-                      </li>
-                      <li>
-                        <span class="display-6"> Evaluated </span>
-                        student competencies and formulated actionable feedback
-                        to accelerate technical skill acquisition and
-                        proficiency.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h3 class="display-6 fs-2 text-body-emphasis mx-3">
+              Work Experience
+            </h3>
           </div>
-          <!-- Contact -->
-          <div id="contact" class="feature col">
-            <div class="get-in-touch-container mt-4">
-              <div
-                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-2"
-              >
-                <img
-                  src="./images/chat-square-heart.svg"
-                  alt="chat icon"
-                  height="20"
-                />
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  <div class="fs-6 mb-0 d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25" color="grey" fill="currentColor"
+                      class="bi bi-plus-circle-dotted lead" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+                      </path>
+                    </svg>
+                    2026 - Present : Technical Support Engineer | Developer
+                    Abu Dhabi UAE.
+                  </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <span class="display-6">Developed </span>
+                      a comprehensive SaaS (Software as a Service) platform
+                      designed for professionals working in the syngas and
+                      chemical process industries.
+                    </li>
+                    <li>
+                      <span class="display-6">Collaborated</span>
+                      with cross-functional teams to drive the development and
+                      deployment of innovative solutions.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 class="display-6 fs-2 text-body-emphasis mx-3">
-                Get In Touch
-              </h3>
             </div>
-            <div class="px-4 mt-4">
-              <div class="fs-6 d-flex text-align-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  color="#00e2f3"
-                  fill="currentColor"
-                  class="bi bi-house-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z"
-                  ></path>
-                  <path
-                    d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.707l-.646.646V10.5a.5.5 0 0 0-1 0v2.793l-.646-.646a.5.5 0 0 0-.708.707l1.5 1.5a.5.5 0 0 0 .708 0"
-                  ></path>
-                </svg>
-                Elektra St, Abu Dhabi, UAE
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  <div class="fs-6 mb-0 d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25" color="grey" fill="currentColor"
+                      class="bi bi-plus-circle-dotted lead" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+                      </path>
+                    </svg>
+                    2021 - 2026 : Supervisor I | Software Development at
+                    Alliance Software Inc.
+                  </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <span class="display-6">Developed </span>
+                      enterprise Windows desktop and web applications
+                      following Agile and Waterfall methodologies.
+                    </li>
+                    <li>
+                      <span class="display-6">Promoted </span>
+                      to Supervisor to lead a team through the full Software
+                      Development Life Cycle (SDLC), managing source control
+                      and code integration via Azure DevOps and Git.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="fs-6 d-flex text-align-center gap-2 py-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  color="#00e2f3"
-                  fill="currentColor"
-                  class="bi bi-telephone-inbound"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
-                  ></path>
-                </svg>
-                052-573-4078 (whatsapp)
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  <div class="fs-6 mb-0 d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25" color="grey" fill="currentColor"
+                      class="bi bi-plus-circle-dotted lead" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+                      </path>
+                    </svg>
+                    2017 - 2020 : Team Lead | Automation & Control Systems at
+                    Tec Square Solutions Inc.
+                  </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <span class="display-6"> Led </span>
+                      a cross-functional team integrating emerging
+                      technologies to modernize plant operations.
+                    </li>
+                    <li>
+                      <span class="display-6"> Architected </span>
+                      SCADA system infrastructure for real-time factory data
+                      monitoring and developed standardized PLC and
+                      human-machine interface (HMI) control faceplates.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="fs-6 d-flex text-align-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  color="#00e2f3"
-                  fill="currentColor"
-                  class="bi bi-envelope-at-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
-                  ></path>
-                  <path
-                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
-                  ></path>
-                </svg>
-                cpe.dilsontorrefiel@gmail.com
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour">
+                  <div class="fs-6 mb-0 d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25" color="grey" fill="currentColor"
+                      class="bi bi-plus-circle-dotted lead" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+                      </path>
+                    </svg>
+                    2011 - 2017 : Draftsman | Automation & Control Systems at
+                    Tec Square Solutions Inc.
+                  </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <span class="display-6"> Designed </span>
+                      comprehensive 2D and 3D CAD layouts for industrial
+                      automation projects.
+                    </li>
+                    <li>
+                      <span class="display-6"> Optimized </span>
+                      instrumentation placement for tanks, pressure vessels,
+                      pumps, valves, and sensors, significantly streamlining
+                      field installation and piping routes.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFive">
+                  <div class="fs-6 mb-0 d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25" color="grey" fill="currentColor"
+                      class="bi bi-plus-circle-dotted lead" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z">
+                      </path>
+                    </svg>
+                    2007 - 2011 : Teaching Staff at CITE Technical Institute
+                    Inc.
+                  </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <span class="display-6"> Delivered </span>
+                      comprehensive training modules in basic computer
+                      literacy and advanced AutoCAD 2D & 3D engineering
+                      design.
+                    </li>
+                    <li>
+                      <span class="display-6"> Evaluated </span>
+                      student competencies and formulated actionable feedback
+                      to accelerate technical skill acquisition and
+                      proficiency.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Contact -->
+        <div id="contact" class="feature col">
+          <div class="get-in-touch-container mt-4">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-2">
+              <img src="./images/chat-square-heart.svg" alt="chat icon" height="20" />
+            </div>
+            <h3 class="display-6 fs-2 text-body-emphasis mx-3">
+              Get In Touch
+            </h3>
+          </div>
+          <div class="px-4 mt-4">
+            <div class="fs-6 d-flex text-align-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" color="#00e2f3" fill="currentColor"
+                class="bi bi-house-down" viewBox="0 0 16 16">
+                <path
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z">
+                </path>
+                <path
+                  d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.707l-.646.646V10.5a.5.5 0 0 0-1 0v2.793l-.646-.646a.5.5 0 0 0-.708.707l1.5 1.5a.5.5 0 0 0 .708 0">
+                </path>
+              </svg>
+              Elektra St, Abu Dhabi, UAE
+            </div>
+            <div class="fs-6 d-flex text-align-center gap-2 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" color="#00e2f3" fill="currentColor"
+                class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                <path
+                  d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z">
+                </path>
+              </svg>
+              052-573-4078 (whatsapp)
+            </div>
+            <div class="fs-6 d-flex text-align-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" color="#00e2f3" fill="currentColor"
+                class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671">
+                </path>
+                <path
+                  d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791">
+                </path>
+              </svg>
+              cpe.dilsontorrefiel@gmail.com
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer border-top">
-      <div class="footer-container">
-        <p class="text-body-emphasis">
-          HTML5 | CSS3 | Bootstrap | JavaScript | jQuery
-        </p>
-        <p class="text-body-emphasis">®️2026 Software Engineering</p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/share/1LJNYyGsRs/">
-            <img
-              class="social facebook"
-              src="./images/facebook.png"
-              alt="Facebook Image"
-            />
-          </a>
-          <a href="https://x.com/dtorrefiel1986">
-            <img
-              class="social twitter"
-              src="./images/twitter.png"
-              alt="Twitter Image"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/dilson-torrefiel-685860167?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          >
-            <img
-              class="social linkedin"
-              src="./images/linkedin.png"
-              alt="LinkedIn Image"
-            />
-          </a>
-          <a href="https://wa.me/qr/JZW6GUNL5LK3G1">
-            <img
-              class="social whatsapp"
-              src="./images/whatsapp.png"
-              alt="Whatsapp Image"
-            />
-          </a>
-        </div>
+  <footer class="footer border-top">
+    <div class="footer-container">
+      <p class="text-body-emphasis">
+        HTML5 | CSS3 | Bootstrap | JavaScript | jQuery
+      </p>
+      <p class="text-body-emphasis">®️2026 Software Engineering</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/1LJNYyGsRs/">
+          <img class="social facebook" src="./images/facebook.png" alt="Facebook Image" />
+        </a>
+        <a href="https://x.com/dtorrefiel1986">
+          <img class="social twitter" src="./images/twitter.png" alt="Twitter Image" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/dilson-torrefiel-685860167?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          <img class="social linkedin" src="./images/linkedin.png" alt="LinkedIn Image" />
+        </a>
+        <a href="https://wa.me/qr/JZW6GUNL5LK3G1">
+          <img class="social whatsapp" src="./images/whatsapp.png" alt="Whatsapp Image" />
+        </a>
       </div>
-    </footer>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./script/minify-darkmode.js" defer></script>
-  <script src="./script/minify-navbar.js" defer></script>
-  <script src="./script/minify-pdf.js" defer></script>
-  <script src="./script/minify-spinner.js" defer></script>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./script/minify-darkmode.js" defer></script>
+<script src="./script/minify-navbar.js" defer></script>
+<script src="./script/minify-pdf.js" defer></script>
+<script src="./script/minify-spinner.js" defer></script>
+
 </html>
