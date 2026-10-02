@@ -10,7 +10,7 @@
   <link href="./css/style.css" rel="stylesheet" />
 </head>
 
-<body id="home">
+<body id="home" data-bs-spy="scroll" data-bs-target="#navigation" data-bs-root-margin="0px 0px -40%" tabindex="0">
   <!-- Loader -->
   <div id="loader" class="d-flex justify-content-center">
     <div id="spinner" class="spinner-border" role="status"></div>
@@ -20,8 +20,8 @@
     <div class="navbar-container">
       <nav class="navbar navbar-expand-lg navigation-bar">
         <div class="container-fluid">
-          <a class="navbar-brand profile-logo" href="#">
-            🕷️s<img src="./images/code.png" class="code-image" height="30" alt="code image" />n
+          <a class="navbar-brand profile-logo" href="#home-page" aria-label="Dilson Torrefiel - Home">
+            s🕸️n
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,7 +31,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 w-100">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#home-page">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#project">Project</a>
@@ -40,8 +40,7 @@
                 <a class="nav-link" href="#about-me">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#education
-                  ">Education</a>
+                <a class="nav-link" href="#education">Education</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#experience">Experience</a>
@@ -349,7 +348,7 @@
         </div>
         <!-- Experience -->
         <div id="experience" class="feature col">
-          <div class="experience-icon-container mb-3 mt-4">
+          <div class="experience-icon-container mb-3">
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-3">
               <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor"
@@ -544,7 +543,7 @@
         </div>
         <!-- Contact -->
         <div id="contact" class="feature col">
-          <div class="get-in-touch-container mt-4">
+          <div class="get-in-touch-container">
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-2">
               <img src="./images/chat-square-heart.svg" alt="chat icon" height="20" />

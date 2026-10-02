@@ -1,6 +1,49 @@
+:root {
+  --bs-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --bs-body-color: #191919;
+  --bs-body-bg: #f3f2ef;
+  --bs-emphasis-color: #191919;
+  --bs-secondary-color: #666666;
+  --bs-tertiary-color: #8c8c8c;
+  --bs-primary: #0a66c2;
+  --bs-link-color: #0a66c2;
+  --bs-link-hover-color: #004182;
+  --profile-surface: #ffffff;
+  --profile-border: #dfddda;
+  --profile-muted-surface: #f8f7f5;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-color: #e7e5e4;
+  --bs-body-bg: #1b1f23;
+  --bs-emphasis-color: #f3f2ef;
+  --bs-secondary-color: #c5c5c5;
+  --bs-tertiary-color: #a0a0a0;
+  --bs-primary: #70b5f9;
+  --bs-link-color: #70b5f9;
+  --bs-link-hover-color: #9dcefa;
+  --profile-surface: #22272b;
+  --profile-border: #38434f;
+  --profile-muted-surface: #2b3035;
+}
+
 html {
-  scroll-padding-top: 450px;
+  scroll-padding-top: 5rem;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-family: var(--bs-body-font-family);
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 .margin-0,
@@ -20,7 +63,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: var(--bs-body-bg);
   z-index: 9999;
   /* Stay on top */
 }
@@ -52,7 +95,7 @@ html {
 /* Navigation */
 .profile-logo {
   font-style: normal;
-  color: darkslategrey;
+  color: #f8f9fa;
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
@@ -79,7 +122,20 @@ html {
 }
 
 .navigation-bar {
-  background: linear-gradient(90deg, #00fff0, #0083fe);
+  color: azure;
+  background-color: #0a66c2;
+}
+
+[data-bs-theme="dark"] .navigation-bar {
+  background-color: #004182;
+}
+
+.navigation-bar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navigation-bar .navbar-toggler-icon {
+  filter: invert(1);
 }
 
 .navbar-collapse {
@@ -135,12 +191,21 @@ html {
 }
 
 .nav-link {
-  color: #545454;
+  color: rgba(255, 255, 255, 0.75);
   padding: 5px 10px;
 }
 
-.nav-item .nav-link:hover {
-  color: whitesmoke;
+.navigation-bar .nav-link.active {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.navigation-bar .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navigation-bar .nav-link:hover {
+  color: #ffffff;
 }
 
 .navbar-nav {
@@ -239,7 +304,16 @@ html {
   justify-content: flex-start;
   align-content: center;
   border-radius: 10px;
+  background-color: var(--profile-surface);
+  border: 1px solid var(--profile-border);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   cursor: pointer;
+  transition: background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.project:hover {
+  background-color: var(--profile-muted-surface);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 /* About Me */
@@ -249,12 +323,15 @@ html {
   border-radius: 5px;
 }
 
-.about {
-  margin: 20px 0px;
+.feature {
+  padding: 16px;
+  border: 1px solid var(--profile-border);
+  border-radius: 12px;
+  background-color: var(--profile-surface);
 }
 
-.feature-icon-education {
-  margin-left: 10px;
+.about {
+  margin: 20px 0px;
 }
 
 .school-icon-container,
@@ -270,7 +347,8 @@ html {
 .exp-container {
   margin: 0px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: var(--profile-surface);
+  border: 1px solid var(--profile-border);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -278,7 +356,7 @@ html {
 
 /* Dark Mode Target */
 [data-bs-theme="dark"] .exp-container {
-  background-color: rgba(245, 245, 245, 0);
+  background-color: var(--profile-surface);
 }
 
 .experience {
@@ -288,13 +366,24 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: whitesmoke;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--profile-muted-surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-/* Dark Mode Target */
-[data-bs-theme="dark"] .experience {
-  background-color: rgba(173, 168, 168, 0.119);
+.accordion-item,
+.accordion-button {
+  color: var(--bs-body-color);
+  background-color: var(--profile-surface);
+}
+
+.accordion-item {
+  border-color: var(--profile-border);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-emphasis-color);
+  background-color: var(--profile-muted-surface);
+  box-shadow: inset 0 -1px 0 var(--profile-border);
 }
 
 .experience p {
@@ -320,11 +409,6 @@ html {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-#education {
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Dark Mode Target */
@@ -372,7 +456,8 @@ html {
 }
 
 .footer {
-  background: linear-gradient(90deg, #00fff0, #0083fe);
+  background-color: var(--profile-surface);
+  border-color: var(--profile-border) !important;
   margin-top: 20px;
 }
 
