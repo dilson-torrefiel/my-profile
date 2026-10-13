@@ -2,7 +2,7 @@
   --bs-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   --bs-body-color: #191919;
-  --bs-body-bg: #f3f2ef;
+  /* --bs-body-bg: #f3f2ef; */
   --bs-emphasis-color: #191919;
   --bs-secondary-color: #666666;
   --bs-tertiary-color: #8c8c8c;
@@ -123,7 +123,7 @@ body {
 
 .navigation-bar {
   color: azure;
-  background-color: #0a66c2;
+  background-color: #0557a3;
 }
 
 [data-bs-theme="dark"] .navigation-bar {
